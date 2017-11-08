@@ -34,6 +34,21 @@ class Divide {
             }
             i++;
         }
+        //求和，借此宝地
+        int sum = 0;
+        for (int j = 1;j<=100;j++){
+            sum+=getSum(i);
+        }
+        System.out.println("∑1+∑2+∑3+...+∑100="+ sum);
+    }
+
+    //todo 第六期 97-100
+//求和
+    public static int getSum(int number) {
+        if (number == 1) {
+            return 1;
+        } else {
+            return number + getSum(number - 1);
+        }
     }
 }
-//todo 第六期 96-100
