@@ -42,7 +42,7 @@ class Divide {
         System.out.println("∑1+∑2+∑3+...+∑100="+ sum);
     }
 
-    //todo 第六期 97-100
+    //todo 第六期 97-100，第七期，115，第八期，126
 //求和
     public static int getSum(int number) {
         if (number == 1) {
