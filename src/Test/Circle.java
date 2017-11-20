@@ -30,6 +30,18 @@ public class Circle {
     public double area(){
         return Math.PI*Math.pow(r,2);
     }
+    public boolean isFlag(Point p){
+        if (Math.sqrt(this.point.getX()-p.getX())+Math.sqrt(this.point.getY()-p.getY())<=Math.pow(r,2)){
+            return true;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Point p = new Point(5,5);
+        Circle c = new Circle(5,p);
+        System.out.println(c.isFlag(new Point(6,6))?"在圆内":"不在圆内");
+    }
 }
 
 class Point{
